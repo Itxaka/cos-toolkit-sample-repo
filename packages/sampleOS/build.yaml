@@ -9,7 +9,10 @@ join:
 - category: "app"
   name: "sampleOSService"
   version: ">=0"
-  
+- category: "selinux"
+  name: "policy"
+  version: ">=0"
+
 # Run the steps in the resulting container
 steps:
 - sed -i 's/:VERSION:/{{.Values.version}}/g' setup.yaml
